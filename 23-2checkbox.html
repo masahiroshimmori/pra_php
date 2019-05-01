@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form method="get" action="./23-2checkbox.php">
+            <!--
+            <input type="checkbox" name="test" value="a">a
+            <input type="checkbox" name="test" value="b">b
+            <input type="checkbox" name="test" value="c">c
+            <input type="checkbox" name="test" value="d">d
+            <input type="checkbox" name="test" value="e">e <br>
+            ↑これだと値が一個しか取れないので複数個チェック入れられたら対応できない-->
+            <!--チェックボックスだと複数個チェックできるため配列にて受け取れるように[]をつかう-->
+            <input type="checkbox" name="test[]" value="a">a
+            <input type="checkbox" name="test[]" value="b">b
+            <input type="checkbox" name="test[]" value="c">c
+            <input type="checkbox" name="test[]" value="d">d
+            <input type="checkbox" name="test[]" value="e">e <br>
+            <br>
+            <input type="submit" value="送信">
+        </form>
+    </body>
+</html>
